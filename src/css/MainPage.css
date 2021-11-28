@@ -1,0 +1,45 @@
+.MainPage .first-title {
+  padding: 80px 0px 80px 0px;
+}
+
+.MainPage .first-title-content {
+  text-align: center;
+  border-left: 5px solid var(---green-color);
+}
+
+.MainPage .about-the-lawyer {
+  padding-left: 20px;
+}
+
+.MainPage div .main-photo-and-description {
+  padding: 10px 10px 80px 10px;
+}
+.MainPage .about-layer-button a {
+  text-decoration: none;
+  border-bottom: 2px solid var(---green-color);
+  padding: 10px;
+  font-size: 18px;
+  color: var(---text-color);
+  margin-left: 10px;
+}
+.MainPage .about-layer-button a:hover {
+  color: #fff;
+  background: var(---green-color);
+}
+
+/* Window-Contact-Number */
+
+.MainPage .contact-number {
+  position: fixed;
+  font-size: 14px;
+  background: var(---green-color);
+  padding: 16px 2px 20px 4px;
+  border-radius: 0px 0px 20px 0px;
+}
+.MainPage .contact-number-link {
+  text-decoration: none;
+  color: #fff;
+}
+.MainPage .contact-number-link:hover {
+  color: rgba(255, 255, 255, 0.842);
+}

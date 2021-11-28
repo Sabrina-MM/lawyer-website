@@ -1,0 +1,83 @@
+.Contact-details hr {
+  border: 1px solid;
+}
+
+.Contact-details .detail-title {
+  padding: 80px 0px 100px 0px;
+  text-align: center;
+}
+
+.Contact-details .contact-details-content {
+  margin: 50px 0px 50px 0px;
+}
+
+.Contact-details .main-title-content {
+  background: var(---grey-background-color);
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.Contact-details li {
+  margin: 10px 0px 10px 0px;
+  font-size: 18px;
+}
+.Contact-details .contact-information-title {
+  padding: 20px 0px 10px 0px;
+}
+
+.Contact-details ul {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.Contact-details .row {
+  --bs-gutter-x: 0px;
+}
+.Contact-details .photo-location {
+  width: 100%;
+  padding: 80px;
+}
+.Contact-details .photo-location img {
+  border-radius: 6px;
+}
+/*   Form   */
+
+.Contact-details .form-content {
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 100px;
+}
+
+.Contact-details .form-content input,
+.form-content textarea {
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  background: var(---grey-background-color);
+  border: none;
+}
+.Contact-details .form-content input,
+.form-content textarea,
+.message:focus {
+  outline: 0;
+}
+.Contact-details .form-content .message {
+  height: 200px;
+}
+
+.Contact-details .form-content button {
+  padding: 8px 15px 8px 15px;
+  font-size: 20px;
+  margin-top: 25px;
+  border-radius: 4px;
+  background: var(---green-color);
+  border: none;
+  color: white;
+}
+.Contact-details .form-content button:hover {
+  background: #389112;
+}
+
+.Contact-details .form-inputs p {
+  color: red;
+}

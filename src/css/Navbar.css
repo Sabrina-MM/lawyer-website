@@ -1,0 +1,55 @@
+.navbar {
+  background: var(---grey-background-color);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding-top: 2px;
+}
+
+.fa-firstdraft {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+}
+
+.nav-menu {
+  display: flex;
+
+  list-style: none;
+  text-align: center;
+  width: 100vw;
+  justify-content: center;
+}
+
+.nav-item {
+  padding-top: 10px;
+}
+
+.nav-links {
+  font-size: 18px;
+  font-family: var(---primary-font-family);
+  color: var(---text-color);
+  text-decoration: none;
+  padding: 13px 40px 0px 40px;
+}
+
+.nav-links:hover {
+  color: var(---green-color);
+  cursor: pointer;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+li .facebook-icon,
+.instagram-icon {
+  font-size: 26px;
+  text-decoration: none;
+  color: black;
+}
+li .facebook-icon:hover,
+.instagram-icon:hover {
+  color: rgba(0, 0, 0, 0.774);
+}
