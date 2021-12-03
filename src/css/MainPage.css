@@ -35,6 +35,7 @@
   background: var(---green-color);
   padding: 16px 2px 20px 4px;
   border-radius: 0px 0px 20px 0px;
+  z-index: 1;
 }
 .MainPage .contact-number-link {
   text-decoration: none;
