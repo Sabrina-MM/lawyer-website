@@ -18,11 +18,9 @@ export default function Form({ submitForm }) {
       // get value nos da el valor del captcha
       // si tenemos valor, significa q el usuarion no es un robot
     } else {
-      console.log("acepta el captcha");
+      console.log("recaptch - ok");
     }
   };
-
-  // se ejecuta cada vez que haya un cambio aqui
 
   return (
     <div className="Form mt-5">
