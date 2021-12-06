@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import FormSignup from "./FormSignup";
+import FormSendEmail from "./FormSendEmail";
 import FormOk from "./FormOk";
 
 import "../css/ContactDetails.css";
@@ -11,5 +11,5 @@ export default function Form() {
     setIsSubmitting(true);
   }, [setIsSubmitting]);
 
-  return !isSubmitting ? <FormSignup submitForm={submitForm} /> : <FormOk />;
+  return !isSubmitting ? <FormSendEmail submitForm={submitForm} /> : <FormOk />;
 }

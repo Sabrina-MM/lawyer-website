@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import useForm from "../utils/useForm";
 import validateForm from "../utils/validateForm";
 import "../css/ContactDetails.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Form({ submitForm }) {
   const { handleChange, handleSubmit, values, errors, form } = useForm(
     submitForm,
     validateForm
   );
+  const [activeButton, setActiveButton] = useState(true);
+  const captchaRef = useRef(null);
+
+  const onchangeRecaptcha = () => {
+    if (captchaRef.current.getValue()) {
+      setActiveButton(false);
+      // get value nos da el valor del captcha
+      // si tenemos valor, significa q el usuarion no es un robot
+    } else {
+      console.log("acepta el captcha");
+    }
+  };
+
+  // se ejecuta cada vez que haya un cambio aqui
 
   return (
     <div className="Form mt-5">
@@ -72,7 +87,24 @@ export default function Form({ submitForm }) {
             </label>
             {errors.checkbox && <p>*{errors.checkbox}</p>}
           </div>
-          <button type="submit">Enviar</button>
+
+          <div className="recaptcha">
+            {" "}
+            <ReCAPTCHA
+              sitekey={process.env.REACT_APP_API_KEY_RECAPTCHA}
+              onChange={onchangeRecaptcha}
+              ref={captchaRef}
+              name="captcha"
+              className="mt-4 ms-2 mb-3"
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={activeButton}
+            onClick={() => setActiveButton(false)}
+          >
+            Enviar
+          </button>
         </form>
       </div>
     </div>

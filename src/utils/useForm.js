@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
 
-const useForm = (callback, validateForm) => {
+const useForm = (callback, validateForm, prueba) => {
   const [values, setValues] = useState({
     firstName: "",
     email: "",
@@ -24,6 +24,7 @@ const useForm = (callback, validateForm) => {
     e.preventDefault();
     setErrors(validateForm(values));
     setIsSubmitting(true);
+
     let debug = false;
 
     if (isSubmitting) {
@@ -52,7 +53,13 @@ const useForm = (callback, validateForm) => {
     }
   }, [errors, isSubmitting, callback]);
 
-  return { handleChange, handleSubmit, values, errors, form };
+  return {
+    handleChange,
+    handleSubmit,
+    values,
+    errors,
+    form,
+  };
 };
 
 export default useForm;
