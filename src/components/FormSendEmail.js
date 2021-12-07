@@ -91,7 +91,6 @@ export default function Form({ submitForm }) {
             <ReCAPTCHA
               sitekey={process.env.REACT_APP_API_KEY_RECAPTCHA}
               onChange={onchangeRecaptcha}
-              render="explicit"
               ref={captchaRef}
               name="captcha"
               className="mt-4 ms-2 mb-3"
