@@ -28,7 +28,10 @@ function App() {
                 className="img-fluid"
               />
             </li>
-            <li className="name">Ernestor Javier Martinez</li>
+            <li className="name">
+              {" "}
+              <h1>Ernestor Javier Martinez</h1>
+            </li>
           </ul>
         </div>
         <Navbar />
